@@ -6,17 +6,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 2px solid red;
+  /* border: 2px solid red; delete later */
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
-  overflow: hidden;
 }
 header {
   display: flex;
-  height: 50vh;
+
   position: relative;
 }
 header .style-wrapper {
@@ -28,26 +26,56 @@ header .style-wrapper {
   );
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
-#mock-image {
-  height: 400px;
-  width: 300px;
+.content-wrapper {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
 }
-picture {
+.content-wrapper #mock-image {
+  width: 100%;
+}
+header picture {
+  display: flex;
   position: relative;
-  height: 65%;
+  overflow: hidden;
+  justify-content: center;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  width: min(100%-2rem, 400px);
 }
-picture #mock-image {
+header picture #mock-image {
+  /* delete later*/
   background-color: lightcoral;
   color: white;
   text-align: center;
   line-height: 20rem;
   height: 100%;
+  /* delete later*/
 }
-picture > p {
+header picture > p {
   position: absolute;
-  top: 10%;
-  left: 75%;
-  background-color: greenyellow;
-  width: 75%;
+  bottom: 10%;
+  left: 0;
+  font-weight: 550;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  color: white;
+}
+header .article {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+header article h2 {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+header article .links {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
 }
