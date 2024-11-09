@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 2px solid red; delete later */
+  /* border: 2px solid red; */
 }
 
 body {
@@ -24,8 +24,8 @@ header .style-wrapper {
   position: absolute;
   background: linear-gradient(
     to right bottom,
-    rgb(126, 116, 196) 50%,
-    white 50%
+    rgb(126, 116, 196) 65%,
+    white 35%
   );
   height: 100%;
   width: 100%;
